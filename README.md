@@ -36,7 +36,8 @@ $ python piplatest.py freeze -v django six
 ```bash    
 $ python piplatest.py install   
 ```  
-Install from requirements.txt but ignore version info,i.e. use the latest version.
+Install from `requirements.txt` but ignore version info,i.e. use the latest version.   
+Make sure you have a `requirements.txt` in the current working directory.
 <br>
 
 ```bash    

@@ -32,7 +32,6 @@ $ python piplatest.py freeze -v django six
     six==1.4.1
     pkgB
     ...
-<br>
 
 ```bash    
 $ python piplatest.py install   

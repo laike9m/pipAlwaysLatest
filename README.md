@@ -23,32 +23,32 @@ Example
 ### `pip freeze` wrapper
 
 1. Generate `requirements.txt` without version info:
-```bash  
-$ python piplatest.py freeze  
-```  
+    ```bash  
+    $ python piplatest.py freeze  
+    ```  
 
 2. Generate `requirements.txt` and keep some packages' version info:
-```bash    
-$ python piplatest.py freeze -v django six   
-```  
-`django` and `six` will keep version info in `requirements.txt`:  
-
-    pkgA
-    django==1.6.3
-    ...
-    six==1.4.1
-    pkgB
-    ...
+    ```bash    
+    $ python piplatest.py freeze -v django six   
+    ```  
+    `django` and `six` will keep version info in `requirements.txt`:  
+    
+        pkgA
+        django==1.6.3
+        ...
+        six==1.4.1
+        pkgB
+        ...
 
 ### `pip install -r` wrapper
 1. Install from `requirements.txt` using the latest version.  
-```bash    
-$ python piplatest.py install   
-```  
-Make sure you have a `requirements.txt` in the current working directory.
+    ```bash    
+    $ python piplatest.py install   
+    ```  
+    Make sure you have a `requirements.txt` in the current working directory.
 
 2. Install from `requirements.txt` using the latest version except for some packages:
-```bash    
-$ python piplatest.py install -v django six  
-```  
-For this case, `django` and `six` will install the version specified in `requirements.txt`, others packages use the latest.
+    ```bash    
+    $ python piplatest.py install -v django six  
+    ```  
+    For this case, `django` and `six` will install the version specified in `requirements.txt`, others packages use the latest.

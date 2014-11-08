@@ -1,3 +1,8 @@
+Introduction
+------------
+pipAlwaysLatest is a **wrapper** around [`pip`](https://pypi.python.org/pypi/pip), so you must have pip installed or using Python3.4 which has pip installed by default.  
+The reason I wrote this is sometimes I find it hard to install the latest version of packages using requirements.txt in that it always set specific versions. For most third-party packages, their existing APIs are stable, so installing the latest version is safer than you might think. Therefore I wrote this to help me do this, and in case certain version of packages are necessary, it's also possible to install them according to versions in requirements.txt by adding package name as argument.
+
 Usage
 -----
     usage: piplatest.py [-h] [-v USE_VERSION [USE_VERSION ...]] method

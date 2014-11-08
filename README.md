@@ -20,12 +20,14 @@ Usage
 
 Example
 -------
+### `pip freeze` wrapper
+
+1. Generate `requirements.txt` without version info:
 ```bash  
 $ python piplatest.py freeze  
 ```  
-Generate `requirements.txt` without version info
-<br>
 
+2. Generate `requirements.txt` and keep some packages' version info:
 ```bash    
 $ python piplatest.py freeze -v django six   
 ```  
@@ -38,14 +40,15 @@ $ python piplatest.py freeze -v django six
     pkgB
     ...
 
+### `pip install -r` wrapper
+1. Install from `requirements.txt` using the latest version.  
 ```bash    
 $ python piplatest.py install   
 ```  
-Install from `requirements.txt` but ignore version info,i.e. use the latest version.   
 Make sure you have a `requirements.txt` in the current working directory.
-<br>
 
+2. Install from `requirements.txt` using the latest version except for some packages:
 ```bash    
 $ python piplatest.py install -v django six  
 ```  
-`django` and `six` will install the version specified in `requirements.txt`, others packages use the latest.
+For this case, `django` and `six` will install the version specified in `requirements.txt`, others packages use the latest.
